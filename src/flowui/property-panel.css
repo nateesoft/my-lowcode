@@ -1,0 +1,15 @@
+.panel {
+  padding: 10px;
+  background-color: snow;
+  width: 350px;
+}
+
+.property {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.buttonPanel {
+  margin: 2px;
+  font-size: 22px;
+}
