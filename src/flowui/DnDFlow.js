@@ -17,9 +17,7 @@ import PropertyPanel from "./PropertyPanel"
 import "./index.css"
 import "./property-panel.css"
 
-let id = 0
-const getId = () => `dndnode_${id++}`
-const flowKey = "example-flow"
+const flowKey = "myflow_state"
 
 const DnDFlow = () => {
   const reactFlowWrapper = useRef(null)
@@ -72,7 +70,7 @@ const DnDFlow = () => {
       }
 
       const newNode = {
-        id: getId(),
+        id: `node_${Math.random().toString(36).substring(2, 8)}`,
         type,
         position,
         data: { label },
