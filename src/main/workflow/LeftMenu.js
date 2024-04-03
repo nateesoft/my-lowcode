@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 
-const Sidebar = memo(() => {
-  console.log('Sidebar load')
+const LeftMenu = memo(() => {
   const onDragStart = (event, nodeType) => {
     event.dataTransfer.setData('application/reactflow', nodeType);
     event.dataTransfer.effectAllowed = 'move';
@@ -9,7 +8,7 @@ const Sidebar = memo(() => {
 
   return (
     <aside>
-      <div className="description">TASK</div>
+      <div className="description">Work Flow</div>
       <div className="dndnode input" onDragStart={(event) => onDragStart(event, 'input')} draggable>
         Start
       </div>
@@ -23,4 +22,4 @@ const Sidebar = memo(() => {
   );
 });
 
-export default Sidebar
+export default LeftMenu

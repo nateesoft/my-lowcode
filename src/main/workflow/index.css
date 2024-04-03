@@ -1,0 +1,138 @@
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.dndflow .dndnode {
+  height: 100px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: grab;
+  font-size: 22px;
+}
+
+.dndflow .dndnode.input {
+  border-color: #0041d0;
+}
+
+.dndflow .dndnode.output {
+  border-color: #ff0072;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+    flex-direction: row;
+  }
+
+  .dndflow aside {
+    width: 20%;
+    max-width: 135px;
+  }
+}
+
+.ppanel {
+  padding: 10px;
+  background-color: snow;
+  width: 350px;
+}
+
+.buttonPanel {
+  margin: 2px;
+  height: 35px;
+  font-size: 14px;
+}
+
+.pagePanel {
+  padding: 10px;
+  background-color: snow;
+  width: 'auto';
+}
+
+.panel1{
+  width:90%;
+  max-width:700px;
+  border-top-left-radius:3px;
+  border-top-right-radius:3px;
+  border-bottom-right-radius:3px;
+  border-bottom-left-radius:3px;
+  padding-top:30px;
+  padding-right:20px;
+  padding-bottom:30px;
+  padding-left:20px;
+  margin-top:150px;
+  margin-right:auto;
+  margin-bottom:0px;
+  margin-left:auto;
+  background-color:rgb(217, 131, 166);
+  box-shadow:rgba(0, 0, 0, 0.25) 0px 3px 10px 0px;
+  color:rgba(255, 255, 255, 0.75);
+  font-weight:100;
+}
+.welcome1{
+  text-align:center;
+  font-weight:100;
+  margin-top:0px;
+  margin-right:0px;
+  margin-bottom:0px;
+  margin-left:0px;
+}
+.logo1{
+  width:70px;
+  height:70px;
+  vertical-align:middle;
+}
+.logo1 path{
+  pointer-events:none;
+  fill:none;
+  stroke-linecap:round;
+  stroke-width:7;
+  stroke:rgb(255, 255, 255);
+}
+.big-title1{
+  text-align:center;
+  font-size:3.5rem;
+  margin-top:15px;
+  margin-right:0px;
+  margin-bottom:15px;
+  margin-left:0px;
+}
+.description1{
+  text-align:justify;
+  font-size:1rem;
+  line-height:1.5rem;
+}
+#iufuy1{
+  padding-top:50px;
+  padding-bottom:50px;
+  text-align:center;
+}

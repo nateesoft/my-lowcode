@@ -6,15 +6,14 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^5.0.12",
-    "@jsonforms/core": "^3.2.1",
-    "@jsonforms/material-renderers": "^3.2.1",
-    "@jsonforms/react": "^3.2.1",
+    "@grapesjs/react": "^1.0.0",
     "@monaco-editor/react": "^4.6.0",
     "@mui/icons-material": "^5.15.14",
     "@mui/lab": "^5.0.0-alpha.169",
     "@mui/material": "^5.15.14",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@mui/x-tree-view": "^7.1.0",
+    "grapesjs": "^0.21.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -22,9 +21,11 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0"
+    "@testing-library/user-event": "^13.5.0",
+    "react-router-dom": "^6.22.3"
   },
   "scripts": {
     "start": "react-scripts start",

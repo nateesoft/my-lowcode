@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from "react"
 
-const PropertyPanel = memo(({ props, onComponentChange }) => {
+const PropertyPanel = memo(({ props, onComponentChange, onShowPage }) => {
   const [label, setLabel] = useState("")
 
   const handleKeyUp = (evt) => {
@@ -26,7 +26,7 @@ const PropertyPanel = memo(({ props, onComponentChange }) => {
   }
 
   return (
-    <div className="panel">
+    <div className="ppanel">
       <span>Property</span>
       {props && (
         <div className="property">
@@ -42,6 +42,9 @@ const PropertyPanel = memo(({ props, onComponentChange }) => {
             />
           </div>
           <div>type: {props.type}</div>
+          <div>
+            <button onClick={onShowPage}>Preview Page</button>
+          </div>
         </div>
       )}
     </div>

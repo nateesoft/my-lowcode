@@ -12,10 +12,11 @@ import ReactFlow, {
 } from "reactflow"
 import "reactflow/dist/style.css"
 
-import Sidebar from "./Sidebar"
+import LeftMenu from "./LeftMenu"
 import PropertyPanel from "./PropertyPanel"
+import PagePanel from './PagePanel'
+
 import "./index.css"
-import "./property-panel.css"
 
 const flowKey = "myflow_state"
 
@@ -25,6 +26,7 @@ const DnDFlow = () => {
   const [edges, setEdges, onEdgesChange] = useEdgesState([])
   const [reactFlowInstance, setReactFlowInstance] = useState(null)
   const [property, setProperty] = useState({})
+  const [showPage, setShowPage] = useState(false)
 
   const onConnect = useCallback(
     (params) =>
@@ -154,7 +156,7 @@ const DnDFlow = () => {
 
   return (
     <div className="dndflow">
-      <Sidebar />
+      <LeftMenu />
       <ReactFlowProvider>
         <div className="reactflow-wrapper" ref={reactFlowWrapper}>
           <ReactFlow
@@ -185,7 +187,8 @@ const DnDFlow = () => {
           </ReactFlow>
         </div>
       </ReactFlowProvider>
-      <PropertyPanel props={property} onComponentChange={onPropertyChange} />
+      <PropertyPanel props={property} onComponentChange={onPropertyChange} onShowPage={() => {setShowPage(!showPage); setProperty({})}} />
+      <PagePanel show={showPage} onClose={()=>setShowPage(false)} />
     </div>
   )
 }
